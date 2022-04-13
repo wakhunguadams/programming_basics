@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EAGLE BYTES</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font: 14px, Arial,sans-serif;
+            margin: 0px;
+        }
+        .header {
+            padding: 10px 20px;
+            background: #f2f2f2;
+            text-align: center;
+        }
+        .section::after{
+            display: table;
+            clear: both;
+        }
+        .header h1{
+            font-size: 35px;text-align: center;
+        }
+        .container{
+            width: 100%;
+            background: #f2f2f2;
+        }
+        .nav, .section{
+            float: left;
+            padding: 20px;
+            min-height: 170px;
+            box-sizing: border-box;
+        }
+        .nav{
+            width: 29%;
+            background: #d4d7dc;
+        }
+        .section{
+            width: 80%;
+        }
+        .nav ul {
+            list-style: none;
+            line-height: 24px;
+            padding: 0px;
+        }
+        .nav ul li a {
+            color: #333;
+        }
+        .clearfix:after{
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hiidden;
+        }
+        .footer{
+            background: #acb3b9;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>EAGLEBYTES TECHNOLOGIES</h1>
+            <p style="color: aqua;text-align: center;font-style: italic;">secure pieace of mind</p>
+        </div>
+        <div class="wrapper clearfix">
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Owner</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <img src="images/eagle1.jpg" alt="eagle image" width="400px" height="300px">
+                <h2> welcome to our business</h2>
+                <p>we are happy to do business with you</p>
+                Customer Name:  <input type="text" Placeholder="Enter the Customer Name"/>  
+                <br>  
+                <br>  
+                <select name="Cars" size="5" multiple="multiple">  
+                    <option value="Merceders"> Merceders </option>  
+                    <option value="BMW"> BMW </option>  
+                    <option value="Jaguar"> Jaguar </option>  
+                    <option value="Lamborghini"> Lamborghini </option>  
+                    <option value="Ferrari"> Ferrari </option>  
+                    <option value="Ford"> Ford </option>  
+                </select>    
+                <form>
+                    First name:<br>
+                    <input type="text" name="firstname"><br>
+                    last name:<br>
+                    <input type="text" name="lastname"><br>
+                    Gender:<br>
+                    <input type="radio" name="gender" value="male">male<br>
+                    <input type="radio" name="gender" value="female">female<br>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>copyright &copy;EAGLEBYTES TECHNOLOGIES </p>
+        </div>
+    </div>
+</body>
+</html>
